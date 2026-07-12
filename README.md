@@ -29,11 +29,11 @@ python main.py
 
 The script evaluates trajectories and outputs a statistical dashboard grouped by risk sources (e.g., `direct_prompt_injection`, `malicious_tool_execution`, `inherent_agent_failures`). It provides detailed counts of correct danger interceptions versus safe misjudgments for each individual property, as well as a combined comprehensive defense score.
 
-## OpenClaw MvKS Module
+## MvKS_builder Module
 
-The `openclaw-mvks` directory contains an advanced verification suite based on Multi-valued Kripke Structures (MvKS). It provides tools for matrix-based temporal logic evaluation, fuzzy state transition mapping, and visual distributions of interception probabilities.
+The `MvKS_builder` directory contains an advanced verification suite based on Multi-valued Kripke Structures (MvKS). It provides tools for matrix-based temporal logic evaluation, fuzzy state transition mapping, and visual distributions of interception possibilities.
 
-### Key Scripts in `openclaw-mvks`:
+### Key Scripts in `MvKS_builder`:
 
 1. **`mvks_builder.py`**:
    - Parses the agent evaluation logs and constructs a Multi-valued Kripke Structure (MvKS).
@@ -44,7 +44,7 @@ The `openclaw-mvks` directory contains an advanced verification suite based on M
 2. **`verify-property-eventually.py`**:
    - Evaluates specific temporal properties like ♢Φ (Eventually reaching a safe rejection state) across the agent trajectory network.
    - Implements Max-Min composition (Sup-Inf) and transitive closures (P^+, P^*) for logical state-space paths.
-   - Generates line charts representing the probability measure distributions of successful interceptions across states.
+   - Generates line charts representing the possibility measure distributions of successful interceptions across states.
    - **Usage**: `python verify-property-eventually.py`
 
 3. **`frequency-calculate.py`**:
@@ -56,7 +56,7 @@ The `openclaw-mvks` directory contains an advanced verification suite based on M
 
 To perform a complete formal verification run:
 ```bash
-cd openclaw-mvks
+cd MvKS_builder
 # 1. Build matrices and state spaces
 python mvks_builder.py
 
