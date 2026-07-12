@@ -2,6 +2,9 @@
 
 This project analyzes the security trajectories of AI Agents to predict and evaluate interceptions against various malicious behaviors and vulnerabilities. It processes agent interaction logs and computes statistics based on multi-dimensional temporal properties.
 
+## Data Preparation
+ Download dataset here: https://huggingface.co/datasets/AI45Research/ATBench.
+
 ## Project Structure
 
 - **`main.py`**: The entry point of the program. It loads the trajectory data (`test.json`) and initiates the verification process.
