@@ -37,7 +37,7 @@ The `MvKS_builder` directory contains an advanced verification suite based on Mu
 
 1. **`mvks_builder.py`**:
    - Parses the agent evaluation logs and constructs a Multi-valued Kripke Structure (MvKS).
-   - Generates State-AP matrices and transition probability matrices (P-matrices).
+   - Generates State-AP matrices and transition possibility matrices (P-matrices).
    - Automatically exports state-space matrices to CSV and outputs high-resolution heatmaps.
    - **Usage**: `python mvks_builder.py`
 
